@@ -1,7 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Amethysta&family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Mulish:wght@300&display=swap');
 
 *{
     margin: 0;
+    font-family: "Mulish", sans-serif;
+    color:#708090;
+    text-align: justify;
+    position: relative;
+}
+
+h1, h3
+{
+    text-align: center;
+    font-weight:bolder;
+}
+
+h1{
+    font-size: 30px;
 }
 
 body
@@ -15,7 +29,7 @@ banner {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(115, 115, 115);
+    background-color:#2146C7;
     width: 100%;
     height: 6vh;
 }
@@ -25,52 +39,77 @@ banner {
     height: 6vh;
 }
 
+.logo-hub
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin: 0 10px 0 auto;
+}
+
+.logo-hub2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 0 10px 0 auto;
+}
+
+.logo-hub img, .logo-hub2 img
+{
+    border-radius: 25%;
+    background-color: #708090;
+    width: 15px;
+    height: auto;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.logo-hub img:hover, .logo-hub img:focus, .logo-hub2 img:hover, .logo-hub2 img:focus
+{
+    background-color: #2146C7;
+}
 
 section
 {
     height:auto;
+    margin: 10px;
 }
 
-
-h1, h2, h3, h4, h5, h6
-{
-    text-align: center;
-    font-family: "Amethysta", sans-serif;
-    color: gray;
-}
 
 .content
 {
     display: flex;
     flex-direction: column;
     max-width:100vh;
-
     height: auto;
-    border:5px solid rgb(196, 212, 221);
-    border-radius: 10px;
-    background-color: snow;
+    border: none;
     margin: 0 auto 0 auto;
  }
 
-div {
+section div {
     margin-bottom: 20px;
+}
+
+
+div img + p{
+    font-weight: bold;
 }
 
 .underdevelop{
     height:auto;
     width:50%;
+    margin: 0 auto 0 auto;
 }
 
 p, label, ol li {
-    text-align: justify;
-    font-family: "Mulish", sans-serif;
-    color:slategray;
     margin: 0 5px 0 5px;
     padding: 0 10px 0 10px ;
 }
 
+
 ol{
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 ul li{
@@ -81,15 +120,14 @@ ul li{
 
 
 ul li a:hover{ 
- text-shadow: 0 0 3px ghostwhite;
- background-color:darkslategray;
+ text-shadow: 0 0 3px #f8f8ff;
+ background-color:#0008C1
 }
 
 
 ul li a{
     text-decoration: none;
     color: snow;
-    font-family:"Mulish", sans-serif ;
     padding: 10px;
 }
 
@@ -105,21 +143,19 @@ ul li a{
     width:100px;
     height: auto;
     margin: 10px 10px 0 10px;
-    float: left;
-    
+    float: left;    
 }
 
 .skill-content
 {
-    background-color:darkslateblue;
+    background-color:#2146C7;
     height: auto;
     width:auto;
-    border-radius:0 0 5px 5px;
     margin: 0;
 }
 
 .skill-content h3{
-    color: snow;
+    color: #fffafa;
     padding: 10px;
 }
 
@@ -150,7 +186,6 @@ ul li a{
 
 .contact, .form-contact
 {
-    display: block;
     margin: 20px;
     padding: 0 auto 0 auto;
 }
@@ -160,12 +195,15 @@ ul li a{
     text-align: center;
     padding-bottom: 20px;
 }
+
 input
 {
     width: 40%;
     min-height: auto;
     height: 25px;
+    background-color: initial;
 }
+
 
 input:focus, textarea:focus{
     box-shadow: 0 0 10px rgb(196, 212, 221);
@@ -174,7 +212,6 @@ input:focus, textarea:focus{
 textarea{
     max-height: 100%;
     width: 100%;
-    height: 150px;
     resize: vertical;
 }
 
@@ -183,23 +220,25 @@ textarea{
     border: none;
     width: 70px;
     height: 35px;
-    background-color: slategray;
-    color: snow;
+    background-color: #2146C7;
+    color: #fffafa;
     font-size: 14px;
+    text-align: center;
     border-radius: 20px 0 20px 0;
     cursor: pointer;
     transition: background-color 1s;
+    margin: 0 0 0 20px ;
 }
 
 .button-form:hover
 {
-    background-color:olive;
+    background-color: #0008C1;
 }
 footer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color:rgb(115, 115, 115);
+    background-color:#2146C7;
     width: 100%;
     height: 6vh;
     position: absolute;
@@ -208,9 +247,8 @@ footer{
 
 
 footer p {
-    color: snow;
+    color: #fffafa;
     text-align: right;
     padding: 5px;
-    font-family: "Mulish", sans-serif;
     font-size: smaller;
 }

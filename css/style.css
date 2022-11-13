@@ -5,6 +5,12 @@
     div .img-logo{
         float: none;
     }
+
+    banner .banner-img{
+        width:auto;
+        height:60%;
+    }
+    
     div > time
     {
         margin: 0 5px;
@@ -15,71 +21,28 @@
         width:auto;
         height: 120px;
     }
-
-
-.form-contact input
-    {
-        display: block;
-        width: 100%;
-        min-height: auto;
-        height: 25px;
-        background-color: initial;
-    }
-
-}
-
-@media screen and (max-width: 394.98px)
-{
-    div .img-logo{
-        float: none;
-    }
-    div > time
-    {
-        margin: 0 5px;
-        padding: 0 10px;
-        font-size: 12px;
-    }
-    section .img-profile{
-        width:auto;
-        height: 120px;
-    }
-
-.form-contact input
-    {
-        display: block;
-        width: 100%;
-        min-height: auto;
-        height: 25px;
-        background-color: initial;
-    }
-   
-section .img-profile{
-        width:auto;
-        height: 80px;
-    }
-
 
     nav ul{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content:center;
-        list-style: none;
-        font-size: 10px;
-        cursor: pointer;
+        justify-content:space-evenly;
+        margin: 0;
     }
     
-    
-   nav ul li a{
-        color: #fffafa;
+
+
+.form-contact input
+    {
+        display: block;
+        width: 100%;
+        min-height: auto;
+        height: 25px;
+        background-color: initial;
     }
 
-   nav ul li:hover{ 
-        text-shadow: 0 0 1px #f8f8ff;
-        box-shadow: 0 1px 0 #f8f8ff;
-    }
 }
-
 
 *{
     margin: 0;
@@ -196,9 +159,10 @@ ol{
 
 ul{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    cursor: pointer;
+    
 }
 
 
@@ -208,10 +172,8 @@ ul li a{
 }
 
 ul li:hover{ 
- text-shadow: 0 0 3px #f8f8ff;
- box-shadow: 0 3px 0 #f8f8ff;
+ text-shadow: 0 0 20px #f8f8ff;
 }
-
 
 .img-profile{
     border-radius: 100%;

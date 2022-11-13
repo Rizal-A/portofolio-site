@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Mulish:wght@300&display=swap');
 
-@media screen and (max-width: 500px) and (min-width:300px)
+@media screen and (max-width: 575.98px)
+{
+    div .img-logo{
+        float: none;
+    }
+    div > time
+    {
+        margin: 0 5px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    section .img-profile{
+        width:auto;
+        height: 120px;
+    }
+
+   banner .banner-img{
+        width:auto;
+        height: 5vh;
+    }
+
+.form-contact input
+    {
+        display: block;
+        width: 100%;
+        min-height: auto;
+        height: 25px;
+        background-color: initial;
+    }
+
+}
+
+@media screen and (max-width: 394.98px)
 {
     div .img-logo{
         float: none;
@@ -24,35 +56,34 @@
         height: 25px;
         background-color: initial;
     }
-
-}
-
-@media screen and (max-width: 299px)
-{
-    div .img-logo{
-        float: none;
-    }
-    div > time
-    {
-        margin: 0 5px;
-        padding: 0 10px;
-        font-size: 12px;
-    }
-    section .img-profile{
+   
+section .img-profile{
         width:auto;
         height: 80px;
     }
 
-.form-contact input
-    {
-        display: block;
-        width: 100%;
-        min-height: auto;
-        height: 25px;
-        background-color: initial;
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        list-style: none;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    
+    
+   nav ul li a{
+        color: #fffafa;
     }
 
+   nav ul li:hover{ 
+        text-shadow: 0 0 1px #f8f8ff;
+        box-shadow: 0 1px 0 #f8f8ff;
+    }
 }
+
 
 *{
     margin: 0;
@@ -60,6 +91,7 @@
     color:#708090;
     text-align: justify;
     position: relative;
+    text-decoration: none;
 }
 
 h1, h3
@@ -85,13 +117,13 @@ banner {
     align-items: center;
     background-color:#2146C7;
     width: 100%;
-    height: 6vh;
+    height: 10vh;
     position: relative;
 }
 
 .banner-img{
     width:auto;
-    height: 6vh;
+    height: 10vh;
 }
 
 .logo-hub
@@ -166,25 +198,24 @@ ol{
     margin-left: 12%;
 }
 
-ul li{
-    display: inline;
-    list-style: none;  
-    text-align: justify;
-}
-
-
-ul li a:hover{ 
- text-shadow: 0 0 3px #f8f8ff;
- background-color:#0008C1;
- height: auto;
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
 }
 
 
 ul li a{
-    text-decoration: none;
-    color: snow;
+    color: #fffafa;
     padding: 10px;
 }
+
+ul li:hover{ 
+ text-shadow: 0 0 3px #f8f8ff;
+ box-shadow: 0 3px 0 #f8f8ff;
+}
+
 
 .img-profile{
     border-radius: 100%;

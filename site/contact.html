@@ -4,81 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fakhrizal Ahadiat-Contact</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Fakhrizal Ahadiat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
 </head>
 <body>
-    <!-- Banner & Navigasi link -->    
+    <!-- Banner & Navigasi link -->
     <header>
-        <banner>
-            <img class="banner-img" src="../img/RIZAL (1).png">
-            <nav>
-            <ul>
-                <li><a href="../index.html">About</a></li>
-                <li><a href="./project.html">Project</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </banner>
+        <nav class="navbar fixed-top navbar-dark navbar-expand-lg logo-nav" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#"><img src="../img/RIZAL (1).png" width="auto" height="50" alt=""></a>
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas menu text-center offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="../img/RIZAL (1).png" width="auto" height="50" alt="">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <a class="nav-link list" href="../index.html">About</a>
+                      <a class="nav-link list" href="./project.html">Project</a>
+                      <a class="nav-link list active" aria-current="page" href="#">Contact</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <!-- Content  -->
-    <main class="content">
-        <section>
-            <div class="contact">
-                <h1>Get In Touch</h1>
-                <h3>email</h3>
-                <p>fakhrizal.a.ahadiat@gmail.com</p>
-                <div class="logo-hub2">
-                    <a href="https://www.linkedin.com/in/fakhrizal-ahadiat-46257612b/"><img src="../img/linkedin.png" alt="Linkedin Fakhrizal"></a>
-                    <a href="https://github.com/Rizal-A"><img src="../img/git.png" alt="Git Fakhrizal"></a>
-                </div>
-                <p>or fill out this form below</p>
-            
-                <form action="daftar" method="get">
-                <div class="form-contact">
-                    <label for="yourname">NAME <sup>*</sup></label>
-                    <input type="text" placeholder="Your Name ...." id="yourname" name="urname" required pattern="a..z">
-                    <span></span>
-                </div>
-                <div class="form-contact">
-                    <label for="youremail">EMAIL <sup>*</sup></label>
-                    <input type="email" placeholder="Your Email ...." id="youremail" name="email" required>
-                    <span></span>
-                </div>    
-                <div class="form-contact">
-                <label for="yourmessage">MESSAGE</label>
-                    <textarea id="yourmessage" name="message" rows="10" cols="30" placeholder="Your Message ...."></textarea>
-                </div>    
-             <!--
-             
-                Radio button
-                <div>    
-                    <input type="radio" name="sepatu" id="adidas" value="adidas" checked><label for="adidas">Adidas</label>
-                    <input type="radio" name="sepatu" id="nike" value="nike"><label for="nike">Nike</label>
-                    <label for="ukuran-baju">Ukuran Baju</label>
-                </div>
-                <div>    
-                    Dropdown list
-                    <select name="ukuran-baju" id="ukuran-baju">
-                        <option>--Pilih Ukuran Baju--</option>
-                        <option selected value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                    </select>
-                </div>
-                    Check Box
-                <div>
-                    <input type="checkbox" name="term" id="term" value="setuju"><label for="term">Saya Setuju perihal tersebut</label>
-                -->
-                    <button type="submit" class="button-form">Send</button>
+    <!-- Content -->
+    <main>
+        <section class="container-fluid pt-3 content" id="container">
+                <div class="col-md-12 d-flex flex-column justify-content-center">
+                    <div class="row align-items-center text-center">
+                        <h1 class="fw-bolder">Get In Touch</h1>
+                        <p class="mb-0 fw-bolder">Email</p>
+                        <p class="mt-0">fakhrizal.a.ahadiat@gmail.com</p>
+                    <div class="d-flex justify-content-center flex-wrap">
+                        <a href="https://www.linkedin.com/in/fakhrizal-ahadiat-46257612b/">
+                            <img src="../img/linkedin.png" alt="Linkedin Fakhrizal" class="img-fluid img-hub"></a>
+                        <a href="https://github.com/Rizal-A">
+                            <img src="../img/git.png" alt="Git Fakhrizal" class="img-fluid img-hub"></a>
+                    </div>
+                        <p>or fill out this form below</p>
+                    </div>
+                    <form action="#">
+                    <div class="row align-items-center mb-3">
+                        <label for="name" class="col-sm-2">Name<sup>*</sup></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" width="50" name="name" id="name" placeholder="Your Name ..." required>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-3">
+                        <label for="email" class="col-sm-2">Email<sup>*</sup></label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" width="50" name="email" id="email" placeholder="youremail@domain.com" required>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-3">
+                        <label for="message" class="col-sm-2">Message</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="3" name="message" id="message" placeholder="Message ..."></textarea>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-flex justify-content-center">
+                    <input type="submit" value="Send" class="btn btn-primary">
+                    <input type="reset" value="Reset" class="btn btn-primary">
+                    </div>
                 </form>
                 </div>
-            </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer>
-        <p> &copy; Copyright 2022 - Author: Fakhrizal Ahadiat</p>
+        <footer>
+            <section class="container-fluid bg-footer fixed-bottom" id="container-footer">
+            <div class="col-md-12 d-flex justify-content-end align-items-center">
+                <div class="row text-white">
+                <p class="pt-3">&copy; Copyright 2022 - Author: Rizal Project</p>
+                </div>
+            </div>
+            </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>

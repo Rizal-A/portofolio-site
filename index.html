@@ -5,87 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fakhrizal Ahadiat</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style2.css">
 </head>
 <body>
     <!-- Banner & Navigasi link -->
     <header>
-        <banner>
-            <img class="banner-img" src="./img/RIZAL (1).png">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="./site/project.html">Project</a></li>
-                    <li><a href="./site/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </banner>
+        <nav class="navbar fixed-top navbar-dark navbar-expand-lg logo-nav" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#"><img src="./img/RIZAL (1).png" width="auto" height="50" alt=""></a>
+              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas menu text-center offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img src="./img/RIZAL (1).png" width="auto" height="50" alt="">
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <a class="nav-link list active" aria-current="page" href="#">About</a>
+                      <a class="nav-link list" href="./site/project.html">Project</a>
+                      <a class="nav-link list" href="./site/contact.html">Contact</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Content -->
-    <main class="content">
-        <section>
-            <!-- About Section  -->
-                <img src="./img/S20721A-023760.B_001_Original (3).jpeg" class="img-profile">
-                    <h3>Fakhrizal Ahadiat</h3>
-                <p> By working as a practitioner in social security for 6 years, 2 years at BPJS Kesehatan and 4 years at
-                    BPJS Ketenagakerjaan. I am experienced at managing and fostering companies of various scales,
-                    starting from micro companies (UMKM) to large companies (Industry and Multinational Companies).
-                </p>
-                <p> In addition, with an educational background and have Bachelor Degree in Informatics Engineering. I also skilled in
-                    Technology and Information, such as Fullstack Web Development and Mobile Development (Android).
-                </p>
-                <div class="logo-hub">
-                    <p>Location : Bandung &centerdot; Indonesia</p>
-                   <a href="https://www.linkedin.com/in/fakhrizal-ahadiat-46257612b/"><img src="./img/linkedin.png" alt="Linkedin Fakhrizal"></a>
-                   <a href="https://github.com/Rizal-A"><img src="./img/git.png" alt="Git Fakhrizal"></a>
-                </div>
-        </section>
+    <main>
+        <section class="container-fluid pt-3 content" id="container">
+                <div class="col-md-12 d-flex flex-column justify-content-center">
+                    <div class="row align-items-center">
+                    <picture>
+                        <img src="./img/S20721A-023760.B_001_Original (3).jpeg" class="img-fluid img-size rounded-circle mx-auto d-block" 
+                        alt="profile picture">
+                    </picture>
+                        <h3 class="text-center pt-3">Fakhrizal Ahadiat</h3>
+                            <p> By working as a practitioner in social security for 6 years, 2 years at BPJS Kesehatan and 4 years at
+                                BPJS Ketenagakerjaan. I am experienced at managing and fostering companies of various scales,
+                                starting from micro companies (UMKM) to large companies (Industry and Multinational Companies).
+                            </p>
+                            <p> In addition, with an educational background and have Bachelor Degree in Informatics Engineering. I also skilled in
+                                Technology and Information, such as Fullstack Web Development and Mobile Development (Android).
+                            </p>
+                        <div class="d-flex justify-content-end flex-wrap">
+                            <p>Location : Bandung &centerdot; Indonesia</p>
+                            <a href="https://www.linkedin.com/in/fakhrizal-ahadiat-46257612b/"><img src="./img/linkedin.png" alt="Linkedin Fakhrizal" class="img-fluid img-hub"></a>
+                            <a href="https://github.com/Rizal-A"><img src="./img/git.png" alt="Git Fakhrizal" class="img-fluid img-hub"></a>
+                        </div>
+                    </div>
             <!-- Work Experience Section -->
-        <section>            
-            <h3>Working Experience</h3>
-            <div>    
-                <img src="./img/BPJS_Ketenagakerjaan_logo.svg.png" class="img-logo">
-                        <p>Inspection and Supervisory Officer</p>
-                        <time>September 2022 - Present</time>
-                    <ol>
-                        <li>Supervise and examine companies with indications of irregular BPJS Ketenagakerjaan membership in
-                                accordance with laws and regulations (companies have not registered, companies have not reported actual
-                                data and are in arrears of contributions).</li>
-                        <li>Make recommendations on law enforcement and compliance with third parties against companies that have
-                                not registered and companies that make payments in arrears</li>
-                        <li>Collaborating with relevant stakeholders (government and legal institutions) in order to realize universal
-                                coverage for BPJS Ketenagakerjaan compliance.</li>
-                    </ol>
-            </div>
-            <div>
-                <img src="./img/BPJS_Ketenagakerjaan_logo.svg.png" class="img-logo">
-                <p>Special Account Representative</p>
-                <time>December 2018 - August 2022</time>
-            </div>
-            <div>
-                <img src="./img/2560px-BPJS_Kesehatan_logo.svg.png" class="img-logo">
-                <p>Relationship Officer</p>
-                <time>September 2016 - September 2018</time> 
-            </div>
-        </section>
-            <!-- Skill Section  -->
-        <section class="skill-content">            
-            <h3>Skills Programming</h3>
-                <div class="container-skill">
-                    <img src="./img/HTML.png" alt="HTML-logo">
-                    <img src="./img/CSS.png" alt="CSS-logo">
-                    <img src="./img/JS.png" alt="Javascript-logo">
-                    <img src="./img/php.png" alt="PHP-logo">
-                    <img src="./img/laravel.png" alt="laravel-logo">
-                    <img src="./img/mysql.png" alt="mysql-logo">
-                    <img src="./img/react.png" alt="react-logo">
+            <div class="row align-items-center">
+            <h3 class="text-center">Working Experience</h3>
+                <div class="col-md-12">    
+                    <img src="./img/BPJS_Ketenagakerjaan_logo.svg.png" class="img-fluid img-working">       
+                    <p class="m-0 fw-bolder">Inspection and Supervisory Officer</p>
+                            <time>September 2022 - Present</time>
+                        <ol class="m-0">
+                            <li>Supervise and examine companies with indications of irregular BPJS Ketenagakerjaan membership in
+                                    accordance with laws and regulations (companies have not registered, companies have not reported actual
+                                    data and are in arrears of contributions).</li>
+                            <li>Make recommendations on law enforcement and compliance with third parties against companies that have
+                                    not registered and companies that make payments in arrears</li>
+                            <li>Collaborating with relevant stakeholders (government and legal institutions) in order to realize universal
+                                    coverage for BPJS Ketenagakerjaan compliance.</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./img/BPJS_Ketenagakerjaan_logo.svg.png" class="img-fluid img-working">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="m-0 fw-bolder">Special Account Representative</p>
+                        <time>December 2018 - August 2022</time>
+                    </div> 
+                    <div class="col-md-6">
+                        <img src="./img/2560px-BPJS_Kesehatan_logo.svg.png" class="img-fluid img-working">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="m-0 fw-bolder">Relationship Officer</p>
+                        <time>September 2016 - September 2018</time> 
+                    </div>
                 </div>
+            <div class="row align-items-center mt-3 bg-skill">
+                <h3 class="text-center text-white my-3">Skill Programming</h3>
+                    <div class="col-md-12 d-flex flex-wrap justify-content-center pb-5" id="container-skill">
+                            <img src="./img/HTML.png" class="img-fluid" alt="HTML-logo">
+                            <img src="./img/CSS.png" class="img-fluid" alt="CSS-logo">
+                            <img src="./img/JS.png" class="img-fluid" alt="Javascript-logo">
+                            <img src="./img/php.png" class="img-fluid" alt="PHP-logo">
+                            <img src="./img/laravel.png" class="img-fluid" alt="laravel-logo">
+                            <img src="./img/mysql.png" class="img-fluid" alt="mysql-logo">
+                            <img src="./img/react.png" class="img-fluid" alt="react-logo">
+                     </div>
         </section>
     </main>
-            <!-- Footer  -->
-
         <footer>
-        <p>&copy; Copyright 2022 - Author: Fakhrizal Ahadiat</p>
+            <section class="container-fluid bg-footer" id="container-footer">
+            <div class="col-md-12 d-flex justify-content-end align-items-center">
+                <div class="row text-white">
+                <p class="pt-3">&copy; Copyright 2022 - Author: Rizal Project</p>
+                </div>
+            </div>
+            </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
